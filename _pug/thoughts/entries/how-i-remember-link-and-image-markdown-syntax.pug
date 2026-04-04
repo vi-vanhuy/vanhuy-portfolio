@@ -1,0 +1,51 @@
+extends ../../_layout
+
+block vars
+  - var pageTitle = 'How I remember link and image Markdown syntax'
+  - var pageDescription = ''
+  - var pagePath = 'how-i-remember-link-and-image-markdown-syntax'
+  - var bodyClass = 'thought-detail'
+  - var date = '4 March 2026'
+  - var ogImage = 'og-markdown'
+  - var earlierText = 'What if you said no?'
+  - var earlier = 'what-if-you-said-no'
+
+block content
+
+  :markdown-it
+
+    Image and link syntax in Markdown are pretty similar and it can be hard to remember which text goes where. To help me, I have a few handy mnemonics.
+
+    As a reminder, here is the syntax for a link:
+
+    ```
+    [link text](https://website.com)
+    ```
+
+    And here is the syntax for an image:
+
+    ```
+    ![image alt text](/path-to-file/image.jpg)
+    ```
+
+    To remember what goes in the square bracket vs. the parentheses, I use alliteration:
+
+    *“Put the path in parentheses.”*
+
+    Process of elimination, the alt/link text then must go in the square bracket.
+
+    If rhyming works better for you, I also sometimes think:
+
+    *“Put the URL in the curl.”*
+
+    This requires you to say URL as “Earl” and not “You Are Elle” and I know that makes some people cringe and die. Also parens are not curly braces, but are curled in comparison to a bracket? Not perfect, but it works for me.
+
+    To remember the exclamation point for an image, I started thinking about someone saying “Cheese!” before a photo is taken. But even better, I now think about a camera shutter sound.
+
+    So do you remember that [band whose name was just three exclamation points](https://en.wikipedia.org/wiki/!!!)? How do you even pronounce “!!!”? I guess they said it could be any short sound repeated three times, but most people would say Chk Chk Chk. So I think about the exclamation point preceding a Markdown image as a “chk” sound of a camera shutter. 
+
+    Or if you think of an exclamation point as a “bang” already, you might think about the loud bang of old-timey flash powder.
+
+    So anyway, no clue if this will work for you, but I don’t ever get confused or mix up link and image Markdown anymore so that’s cool! Ok bye.
+
+
