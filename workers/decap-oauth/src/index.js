@@ -1,6 +1,7 @@
 const GITHUB_AUTHORIZE_URL = 'https://github.com/login/oauth/authorize';
 const GITHUB_TOKEN_URL = 'https://github.com/login/oauth/access_token';
 const STATE_COOKIE = 'decap_oauth_state';
+const CMS_ORIGIN = 'https://vanhuy.r2b.io.vn';
 
 function randomState() {
     const bytes = new Uint8Array(24);
@@ -113,13 +114,13 @@ async function handleCallback(request, env) {
         var message = 'authorization:github:success:' + JSON.stringify(data);
         var sent = false;
 
-        function finish(origin, shouldClose) {
+        function finish(shouldClose) {
           if (!window.opener) {
             document.body.innerHTML = '<p>Authentication complete. You can close this window and return to the CMS.</p>';
             return;
           }
 
-          window.opener.postMessage(message, origin || '*');
+          window.opener.postMessage(message, '${CMS_ORIGIN}');
           sent = true;
 
           if (shouldClose) {
@@ -130,8 +131,12 @@ async function handleCallback(request, env) {
         }
 
         function receiveMessage(event) {
+          if (event.origin !== '${CMS_ORIGIN}') {
+            return;
+          }
+
           window.removeEventListener('message', receiveMessage, false);
-          finish(event.origin, true);
+          finish(true);
         }
 
         window.addEventListener('message', receiveMessage, false);
@@ -145,10 +150,10 @@ async function handleCallback(request, env) {
               window.clearInterval(interval);
               return;
             }
-            finish('*', false);
+            finish(false);
           }, 500);
         } else {
-          finish('*', false);
+          finish(false);
         }
       })();
     </script>
