@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const MarkdownIt = require('markdown-it');
+const matter = require('gray-matter');
 
 const ROOT = path.join(__dirname, '..');
 const SITE_URL = 'https://vanhuy.r2b.io.vn';
@@ -19,50 +20,27 @@ function ensureDir(dir) {
     fs.mkdirSync(dir, { recursive: true });
 }
 
-function parseFrontmatter(source, file) {
-    if (!source.startsWith('---\n')) {
-        throw new Error(`${file} is missing frontmatter`);
+function slugify(value) {
+    return String(value || '')
+        .trim()
+        .toLowerCase()
+        .replace(/đ/g, 'd')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+function isoDate(value) {
+    if (value instanceof Date) {
+        const year = value.getUTCFullYear();
+        const month = String(value.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(value.getUTCDate()).padStart(2, '0');
+
+        return `${year}-${month}-${day}`;
     }
 
-    const end = source.indexOf('\n---', 4);
-    if (end === -1) {
-        throw new Error(`${file} has invalid frontmatter`);
-    }
-
-    const raw = source.slice(4, end).trim();
-    const body = source.slice(end + 4).replace(/^\n+/, '');
-    const data = {};
-
-    raw.split('\n').forEach((line) => {
-        const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-        if (!match) {
-            return;
-        }
-
-        const key = match[1];
-        let value = match[2].trim();
-
-        if (value === 'true') {
-            data[key] = true;
-            return;
-        }
-
-        if (value === 'false') {
-            data[key] = false;
-            return;
-        }
-
-        if (
-            (value.startsWith('"') && value.endsWith('"')) ||
-            (value.startsWith("'") && value.endsWith("'"))
-        ) {
-            value = value.slice(1, -1);
-        }
-
-        data[key] = value;
-    });
-
-    return { data, body };
+    return String(value || '').slice(0, 10);
 }
 
 function readPosts() {
@@ -72,26 +50,28 @@ function readPosts() {
         .filter((file) => file.endsWith('.md'))
         .map((file) => {
             const fullPath = path.join(CONTENT_DIR, file);
-            const { data, body } = parseFrontmatter(fs.readFileSync(fullPath, 'utf8'), file);
-            const slug = data.slug || file.replace(/\.md$/, '');
+            const { data, content } = matter(fs.readFileSync(fullPath, 'utf8'));
+            const slug = slugify(data.slug || file.replace(/\.md$/, ''));
+            const date = isoDate(data.date);
 
             if (!data.title) {
                 throw new Error(`${file} is missing title`);
             }
 
-            if (!data.date) {
+            if (!date) {
                 throw new Error(`${file} is missing date`);
             }
 
             return {
                 ...data,
+                date,
                 slug,
                 file,
-                body,
-                year: String(data.date).slice(0, 4)
+                body: content,
+                year: date.slice(0, 4)
             };
         })
-        .filter((post) => process.env.INCLUDE_DRAFTS === 'true' || post.draft !== true)
+        .filter((post) => process.env.HIDE_DRAFTS !== 'true' || post.draft !== true)
         .sort((a, b) => {
             const byDate = new Date(`${b.date}T00:00:00+07:00`) - new Date(`${a.date}T00:00:00+07:00`);
             if (byDate !== 0) {
