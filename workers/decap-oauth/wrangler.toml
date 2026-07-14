@@ -1,6 +1,12 @@
 name = "decap-oauth"
 main = "src/index.js"
 compatibility_date = "2026-07-14"
+workers_dev = false
+preview_urls = false
+
+[[routes]]
+pattern = "cms-auth.vanhuy.r2b.io.vn"
+custom_domain = true
 
 [vars]
 SCOPE = "repo,user:email"
