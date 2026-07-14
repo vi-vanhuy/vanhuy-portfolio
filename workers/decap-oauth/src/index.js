@@ -63,6 +63,7 @@ async function handleCallback(request, env) {
     const code = url.searchParams.get('code');
     const state = url.searchParams.get('state');
     const storedState = readCookie(request, STATE_COOKIE);
+    const redirectUri = new URL('/callback', request.url).toString();
 
     if (!code) {
         return fail('Missing GitHub code.');
@@ -82,14 +83,15 @@ async function handleCallback(request, env) {
         body: JSON.stringify({
             client_id: env.CLIENT_ID,
             client_secret: env.CLIENT_SECRET,
-            code
+            code,
+            redirect_uri: redirectUri
         })
     });
 
     const tokenBody = await tokenResponse.json();
 
     if (!tokenResponse.ok || !tokenBody.access_token) {
-        return fail(tokenBody.error_description || tokenBody.error || 'GitHub token exchange failed.', 502);
+        return fail(`GitHub token exchange failed: ${tokenBody.error_description || tokenBody.error || 'Unknown error'}`, 502);
     }
 
     const payload = JSON.stringify({
@@ -104,15 +106,50 @@ async function handleCallback(request, env) {
     <title>Authorizing</title>
   </head>
   <body>
+    <p>Authorizing...</p>
     <script>
       (function () {
         var data = ${payload};
-        function receiveMessage(event) {
-          window.opener.postMessage('authorization:github:success:' + JSON.stringify(data), event.origin);
-          window.removeEventListener('message', receiveMessage, false);
+        var message = 'authorization:github:success:' + JSON.stringify(data);
+        var sent = false;
+
+        function finish(origin, shouldClose) {
+          if (!window.opener) {
+            document.body.innerHTML = '<p>Authentication complete. You can close this window and return to the CMS.</p>';
+            return;
+          }
+
+          window.opener.postMessage(message, origin || '*');
+          sent = true;
+
+          if (shouldClose) {
+            window.setTimeout(function () {
+              window.close();
+            }, 300);
+          }
         }
+
+        function receiveMessage(event) {
+          window.removeEventListener('message', receiveMessage, false);
+          finish(event.origin, true);
+        }
+
         window.addEventListener('message', receiveMessage, false);
-        window.opener.postMessage('authorizing:github', '*');
+
+        if (window.opener) {
+          window.opener.postMessage('authorizing:github', '*');
+          var attempts = 0;
+          var interval = window.setInterval(function () {
+            attempts += 1;
+            if (sent || attempts > 10) {
+              window.clearInterval(interval);
+              return;
+            }
+            finish('*', false);
+          }, 500);
+        } else {
+          finish('*', false);
+        }
       })();
     </script>
   </body>
