@@ -25,8 +25,8 @@ collections:
     create: true
     extension: "md"
     format: "frontmatter"
-    slug: "{{fields.slug}}"
-    preview_path: "thoughts/entries/{{fields.slug}}"
+    slug: "{{slug}}"
+    preview_path: "thoughts/entries/{{slug}}"
     sortable_fields: ["date", "title"]
     fields:
       - label: "Tieu de"
@@ -35,7 +35,8 @@ collections:
       - label: "Slug"
         name: "slug"
         widget: "string"
-        hint: "Dinh dang khong dau, vi du: sinh-nhat-22-tuoi"
+        required: false
+        hint: "Tu dong tao tu tieu de neu de trong. Co the sua tay neu can."
       - label: "Ngay dang"
         name: "date"
         widget: "datetime"
@@ -56,6 +57,8 @@ collections:
       - label: "Mo ta SEO"
         name: "description"
         widget: "text"
+        required: false
+        hint: "Tu dong tao tu noi dung bai neu de trong."
       - label: "Draft"
         name: "draft"
         widget: "boolean"

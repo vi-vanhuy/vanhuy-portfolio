@@ -8,5 +8,65 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      (function () {
+        function slugify(value) {
+          return String(value || '')
+            .trim()
+            .toLowerCase()
+            .replace(/đ/g, 'd')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+        }
+
+        function stripMarkdown(value) {
+          return String(value || '')
+            .replace(/```[\s\S]*?```/g, ' ')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+            .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+            .replace(/[#>*_`~-]+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+
+        function summarize(body, title) {
+          var text = stripMarkdown(body);
+
+          if (!text) {
+            return title ? 'Bai viet "' + title + '" cua Van Huy.' : '';
+          }
+
+          if (text.length <= 155) {
+            return text;
+          }
+
+          return text.slice(0, 152).replace(/\s+\S*$/, '') + '...';
+        }
+
+        CMS.registerEventListener({
+          name: 'preSave',
+          handler: function ({ entry }) {
+            var data = entry.get('data');
+            var title = data.get('title') || '';
+            var slug = data.get('slug') || '';
+            var description = data.get('description') || '';
+            var body = data.get('body') || '';
+
+            if (!slug && title) {
+              data = data.set('slug', slugify(title));
+            }
+
+            if (!description) {
+              data = data.set('description', summarize(body, title));
+            }
+
+            return data;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
