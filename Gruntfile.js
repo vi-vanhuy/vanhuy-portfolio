@@ -1,4 +1,5 @@
 var path = require('path');
+var childProcess = require('child_process');
 var NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = function(grunt) {
@@ -175,6 +176,12 @@ module.exports = function(grunt) {
                         dest: 'public/images/blog'
                     },
                     {
+                        cwd: '_admin',
+                        expand: true,
+                        src: ['**'],
+                        dest: 'public/admin'
+                    },
+                    {
                         cwd: '_rss',
                         expand: true,
                         src: ['**'],
@@ -193,8 +200,8 @@ module.exports = function(grunt) {
         },
         watch: {
             pug: {
-                files: ['_pug/**'],
-                tasks: ['pug:basic'],
+                files: ['_pug/**', '_content/thoughts/**'],
+                tasks: ['thoughts', 'pug:basic'],
                 options: {
                   spawn: false,
                   livereload: true
@@ -215,7 +222,7 @@ module.exports = function(grunt) {
                 }
             },
             assets: {
-                files: ['_assets/**'],
+                files: ['_assets/**', '_admin/**'],
                 tasks: ['copy'],
                 options: {
                   livereload: true
@@ -252,7 +259,18 @@ module.exports = function(grunt) {
     // Note: cssmin breaks the :has supports stuff, so leaving off for now
     grunt.registerTask('css', ['stylus']);
     grunt.registerTask('js', ['browserify', 'uglify']);
-    grunt.registerTask('build', ['clean', 'css', 'js', 'pug', 'copy']);
+    grunt.registerTask('thoughts', function() {
+        var done = this.async();
+        var child = childProcess.spawn(process.execPath, ['scripts/build-thoughts.js'], {
+            cwd: __dirname,
+            stdio: 'inherit'
+        });
+
+        child.on('exit', function(code) {
+            done(code === 0);
+        });
+    });
+    grunt.registerTask('build', ['clean', 'thoughts', 'css', 'js', 'pug', 'copy']);
     grunt.registerTask('serve', ['build', 'connect:server', 'watch']);
     grunt.registerTask('default', ['build']);
 };

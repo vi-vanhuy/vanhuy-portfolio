@@ -1,10 +1,10 @@
-nav#nav.main-nav(class=bodyClass)
-  ol
-    li: a(href='/about') About
-    li: a(href='/work') Work
-    li: a(href='/thoughts') Thoughts
-    li: a(href='/archive') Archive
-    li: a(href='/feed.xml') RSS
-    li: a(href='/gifs') Gifs
-small.center: a(href='/') v. XIX
-include mode-toggle
+nav.main-nav
+  a.nav-home(href='/') VH
+  a.nav-about(href='/work') Work
+  a.nav-about(href='/about') About
+  a.nav-thoughts(href='/thoughts') Thoughts
+  .mode-toggle
+    button(class='[ toggle-button ] [ js-mode-toggle ]')
+      span(class='toggle-icon' aria-hidden='true')
+        include ../../_assets/images/archive/2023/theme-icons.svg
+      span(class='[ toggle-text ] [ js-mode-toggle-text ]') Mode

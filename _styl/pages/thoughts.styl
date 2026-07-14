@@ -7,18 +7,19 @@
   .thoughts-list
     grid-column: full
     display: grid
-    gap: var(--content-padding)
+    gap: var(--body-padding)
 
-    @media screen and (min-width: $bp-sm)
-      grid-template-columns: minmax(auto, 7vw) 1fr
+    @media screen and (min-width: $bp-sm + 1)
+      grid-template-columns: minmax(auto, 10vw) 1fr
 
       .dateline
+        
         &::after
           content: ''
           flex: 1
           height: 1px
           display: block
-          background-color: var(--light-color)
+          background-color: var(--border-color)
 
   .dateline
     margin-top: 0
@@ -27,7 +28,6 @@
     align-items: center
     font-family: $font-base
     font-size: var(--font-xs)
-    font-weight: 400
     color: var(--accent-color)
     grid-column: 1
 

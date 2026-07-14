@@ -2,12 +2,11 @@
 * $TWEET CALLOUT
 --------------------------------------------------------------------*/
 
-.twitter-tweet,
-.bsky-post
-  margin-bottom: 1.5lh
+.twitter-tweet
   max-width: 550px
   padding: 1em;
-  border: $ui-border-thin
+  border: $ui-border
+  border-radius: 5px
 
   .tweet-author
     display: grid
@@ -29,25 +28,21 @@
   .author-handle
     grid-area: handle
     link-alt()
-    font-weight: 400
-  .twitter-logo,
-  .bsky-logo
+  .twitter-logo
     grid-area: logo
     svg
       width: 1.5em
       height: @width
       path
         fill: var(--text-color)
-        stroke: transparent
-    &:hover
-      background-color: transparent
 
   .tweet-data
     padding-top: .5em
     display: flex
     justify-content: space-between
     gap: .5em
-    border-top: $ui-border-thick
+    border-top: $ui-border
+    opacity: .7
 
     small
       margin: 0

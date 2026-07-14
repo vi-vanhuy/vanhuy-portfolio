@@ -8,8 +8,78 @@
   .icon.codepen
     --icon-w: 1.3em
 
+.work .archive-list .blank-space
+  @media screen and (min-width: 451px) and (max-width: $bp-sm)
+    display: grid
+    grid-column: span 1
+  @media screen and (min-width: $bp-sm + 1) and (max-width: $bp-lg)
+    display: none
+  @media screen and (min-width: $bp-lg + 1)
+    display: grid
+    grid-column: span 1
+
+.stats-columns
+  display: grid
+  gap: 2em
+  margin-top: 1.5em
+
+  @media screen and (min-width: $bp-sm + 1)
+    grid-template-columns: 1fr 1fr
+
+  .column
+    margin-top: 0
+    
+  h3
+    margin-top: 0
+    font-size: var(--font-md)
+    font-weight: 550
+    opacity: 0.9
+
+.stats-grid,
+.stats-grid-3
+  display: grid
+  gap: 1px
+  background: var(--border-color)
+  border: 1px solid var(--border-color)
+  margin-top: .75em
+
+  .stat-item
+    background: var(--bg-color)
+    padding: 1.5em 1em
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: .4em
+    margin-top: 0
+
+    & > *
+      margin-top: 0
+
+  .stat-number
+    font-family: var(--heading-font)
+    font-size: var(--font-lg)
+    font-weight: 700
+    line-height: 1
+    color: var(--text-color)
+
+  .stat-label
+    font-size: var(--font-xs)
+    text-transform: uppercase
+    letter-spacing: .08em
+    opacity: .7
+
+.stats-grid
+  grid-template-columns: repeat(5, 1fr)
+  margin-top: 1.5em
+  @media screen and (max-width: $bp-sm)
+    grid-template-columns: repeat(2, 1fr)
+
+.stats-grid-3
+  grid-template-columns: repeat(3, 1fr)
+
 .work
-  .archive-list
-    .links
-      @media screen and (max-width: $bp-xs)
-        display: block
+  .content
+    h2
+      font-family: $font-base

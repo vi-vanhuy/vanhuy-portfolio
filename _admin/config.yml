@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: vi-vanhuy/vanhuy-portfolio
+  branch: main
+  base_url: https://cms-auth.vanhuy.r2b.io.vn
+  squash_merges: true
+
+publish_mode: editorial_workflow
+site_url: https://vanhuy.r2b.io.vn
+display_url: https://vanhuy.r2b.io.vn
+logo_url: /assets/images/vanhuy-avatar.png
+
+media_folder: "_assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "thoughts"
+    label: "Thoughts"
+    folder: "_content/thoughts"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{fields.slug}}"
+    preview_path: "thoughts/entries/{{fields.slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - label: "Tieu de"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "Dinh dang khong dau, vi du: sinh-nhat-22-tuoi"
+      - label: "Ngay dang"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+      - label: "Ngay hien thi"
+        name: "displayDate"
+        widget: "string"
+        hint: "Vi du: 19 thang 4, 2027 hoac Thang 6, 2026"
+      - label: "Thu tu trong ngay"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        default: 0
+        required: false
+        hint: "Chi can doi khi co nhieu bai cung ngay. So lon hon se hien truoc."
+      - label: "Mo ta SEO"
+        name: "description"
+        widget: "text"
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "OG Image"
+        name: "ogImage"
+        widget: "image"
+        required: false
+      - label: "Noi dung"
+        name: "body"
+        widget: "markdown"

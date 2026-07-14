@@ -3,60 +3,48 @@
 --------------------------------------------------------------------*/
 
 h1, h2, h3
-  text-wrap: pretty
-
-h1
+  font-family: $font-new-title
   line-height: 1.1
-  font-family: $font-heading
-  font-size: var(--font-xl)
+
+  em
+    font-family: inherit
+    font-style: italic
 
 h2
-  line-height: 1.2
-  font-size: var(--font-md)
-  font-family: $font-bold
-  text-transform: uppercase
-  scroll-margin-top: 20px
-  
-  @media screen and (max-width: $bp-sm - 1)
-    font-size:   calc(var(--font-md) - .2rem)
+  font-size: var(--font-xl)
+  font-weight: 450
 
 h3
-  line-height: 1.2
-  font-size: var(--font-base)
-  font-family: $font-bold
-  text-transform: uppercase
+  font-size: var(--font-lg)
+  font-weight: 450
 
-// p, li {
-//   text-wrap: pretty
-// }
-
-.light
-  font-family: $font-light
+p, li {
+  text-wrap: pretty
+}
 
 em
   font-weight: inherit
-  font-family: $font-italic
+  font-style: italic
 
 strong
-  font-family: $font-bold
+  font-weight: 550
 
 small,
 .small
   font-size: var(--font-sm)
-
-ul.bullets
-  list-style-type: disc
-  padding-left: 1rem
+  font-weight: 400
 
 figcaption
   font-size: var(--font-xs)
+  font-weight: 400
 
 p code,
 ul code,
 h2 code,
 figcaption code
   padding: 3px 5px
-  border: $ui-border-dotted
+  background-color: var(--pre-bg)
+  border: $ui-border
   font-size: var(--font-sm)
   font-weight: 500
   color: var(--text-color)
@@ -66,22 +54,23 @@ h2 code
   margin: -.15em .2em 0
   display: inline-block
   vertical-align: middle
-  text-shadow: none
-  text-transform: none
 
 pre, code
   font-family: monospace
   border-radius: 3px
+  font-size: var(--font-sm)
 
 pre
   white-space: pre-wrap
   overflow: auto
-  border: $ui-border-thin
+  border: $ui-border
 pre code
-  padding: 1em
-  background-color: var(--pre-bg)
-  font-size: var(--font-xs)
-  display: block
+  @media screen and (max-width: 400px)
+    font-size: var(--font-xs)
+
+.shrinking pre,
+.growing pre
+  border-color: transparent
 
 .no-js pre
   padding: 1em

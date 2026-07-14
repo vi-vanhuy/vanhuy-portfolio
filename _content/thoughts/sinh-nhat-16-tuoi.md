@@ -1,0 +1,46 @@
+---
+title: "Sinh nhật năm 16 tuổi của Huy."
+slug: "sinh-nhat-16-tuoi"
+date: "2021-04-19"
+displayDate: "19 tháng 4, 2021"
+order: 0
+description: "Review tuổi 16 - tự đánh giá về học tập, suy nghĩ, niềm vui, tình cảm và những trăn trở tuổi trẻ."
+draft: false
+ogImage: ""
+---
+
+Xin lỗi ĐƯỢC CHƯA!??
+
+-19/04
+
+Nay là sinh nhật tôi đấy 😳.
+
+Thật may là hôm đấy bệnh viện không có trục trặc gì hay trong bụng mẹ tôi không phá phách nên mẹ tôi sinh ra tôi thuận buồn xuôi gió. Cảm ơn cái giường mẹ tôi nằm, cảm ơn bà San đã đỡ đẻ cho mẹ cháu (Cả mấy lọ kẹo mà bà lừa cháu để chọc cái kim tiêm 💉 vào đùi cháu nữa). Bước đầu giúp cháu có sức khoẻ và tinh thần để tiếp lửa cho bài bốc phốt bản thân của 1 năm qua 😐
+
+Start!!
+
+**[Học tập]**
+
+Tôi chọn nói về học tập trước vì nó là thứ thảm hại nhất mà tôi tự nhận thấy ở bản thân tôi 😑. Tôi thi đỗ vào trường mà tôi lựa chọn, vào đúng lớp và chuyên môn mà tôi thích (Khối 😎. Tôi bắt đầu nghĩ *À à à à... Đây sẽ là một nơi hoàn hảo cho mình, một nơi mình có thể phát triển bản thân theo đúng Form mà mình đặt ra. Không còn nơi nào tốt hơn nơi này nữa, mình phải cố gắng thôi!?!* Tôi háo hức tới trường lớp, gặp bạn bè, nhanh chóng tiếp cận với giáo viên mới, hăng hái phát biểu bài, điểm số bắt đầu là thứ quan trọng đối với tôi. Và....tôi nản ngay sau đó khoảng 1 tháng 🤦🏻♂️. Tới khoảng 2-3 tháng sau tôi nhận ra tất cả điểm miệng của tôi nhận được đều là từ tháng đầu tiên🤷🏼. Thật thất vọng, điểm kiểm tra của tôi cũng lẹt đẹt, kém hẳn so với trước. Tôi xác định được nguyên nhân ngay sau đó 👌. LƯỜI. Không thể phủ nhận được, tôi quá là lười học😿. 1 tháng đầu ít bài tập công thức nên tôi vẫn có thể nhớ mà không cần học, tới sau đó thì nhiều lên và không thể nhớ hết. Tôi bỏ và quên sạch😖. Và đấy, lớp tự nhiên nhưng học ngu tất cả các môn tự nhiên(Toán Lý Hoá Sinh). Một phần nữa là tôi không hề cẩn thận một tí nào. Tôi nghĩ rằng làm một bài toán nhỏ nhỏ, lặp lại nhiều lần một công thức, lâu la và thế là tôi bỏ luôn, làm câu khác 🤦🏻♂️ Huy mày tật vl Huy ạ 😞. Và kết quả đúng như tôi dự đoán, tôi học sinh trung bình do môn Văn dưới 5+. Lớp định hướng nhưng học sinh trung bình, quá thất vọng về bản thân. Và đầu kì II này tôi cũng không khá hơn khi lười học online. Tôi vẫn không hiểu gì. Tôi cữ nghĩ mình đã rút ra được kinh nghiệm nhưng vẫn chỉ có lười, và lười lười lười lười. Thú nhận cùng cô Duyên rằng hôm trước em có đem vở nhưng không mang lên về nhà em mới chép ✍🏻 Em xin lũi cô 👉👈.
+
+**[Suy nghĩ]**
+
+Này có lẽ sẽ khá hơn mảng trên 😞 (mong là thế vì vừa viết vừa ngẫm xem mình có tội lỗi gì)
+
+Tôi nhận ra bản thân có vẻ quyết đoán hơn năm ngoái, nhưng vẫn nhiều lần quyết định trước khi nghĩ 😞. Bảo thủ, theo ý mình, luôn muốn người khác làm theo ý mình, luôn nghĩ mình đúng , luôn kiếm cách để chỉ đạo người khác, khá huênh hoang khiến cho nhiều người khó chịu 🦶. Kiểu “Mày cút m* mày đi, kệ tao” 🥲. Tôi quản lý tốt cảm xúc riêng của tôi, khó bộc lộ ra ngoài. Nhưng tôi thích người bộc lộ cảm xúc thật hơn việc ỉm đi như của tôi 😞 nguy hiểm lắm. Tôi bắt đầu biết kìm chế cảm xúc, trước tôi hay kiểu cáu bẩn, thỉnh thoảng gắt lên. Giờ thì đỡ hơn rồi. Tính cách tôi hơi lạ, tiếp xúc ở ngoài mọi người luôn nghĩ tôi là một thằng Chmúa Hmề nhưng thực ra tôi hướng nội, tôi giỏi khuyên can với đưa ra ý kiến hơn việc làm trò con bò cho mọi người cười 😒. Nhưng tôi lại thích nhìn mọi người cười, à. Thực ra là tôi muốn nổi bật trong đám đông,tôi quyết định sống khác người để mọi người trong nhà chửi tôi là thằng ngáo 🤷🏼 mọi người thân đều nghĩ rằng tôi là một thằng không biết ăn nói, ăn hại là nhiều. Vì tôi không thể nói chuyện được với người thân 🤦🏻♂️, tôi giỏi giao tiếp với người lạ, mở câu truyện, kiểu vậy. Vô cùng ghét làm theo mẫu. Đứa nào nói làm như kia kìa, bắt buộc phải làm như thế. Làm giống như lớp này lớp nọ, giống TV bla bla thì tôi không kham nổi. Tôi muốn tìm ra sự sáng tạo trong một chủ đề, không phải làm theo cách truyền thống.Thôi thế thôi chứ mọi người không đọc tới đây đâu 😂.
+
+**[Niềm vui]**
+
+Tôi có rất nhiều niềm vui 😆. Tôi luôn muốn mình vui vẻ trong mọi tình huống, tìm ra sự vui vẻ trong nó. Tôi thích sách, đúng hơn là mua vì thường một cuốn tôi chỉ đọc tới gần cuối hoặc một nửa, xong mất tiêu 🤦🏻♂️. Không cẩn thận nó thế, nhưng tôi ghét đứa nào dám làm hỏng hay cong bìa sách tôiii, nhìn khó chịu 🙄. Tôi hay chơi game với lũ bạn thân nhất quả đất. Chơi chủ yếu là tấu hài chứ không nghiêm túc. Tôi thích sự mới mẻ. Làm một việc gì đấy mới như chụp ảnh, nghĩ nội dung hay đi chơi mấy chỗ tôi chưa đi. Tôi thích nấu ăn dù nấu không ngon nhưng được sự động viên của chú và bên ngoại nấu ăn rất ngon nên tôi nghĩ tôi cũng như thế, sớm muộn gì cũng ngon hết 😂. Tôi có khá ít bạn nhưng đều là những người tốt. Họ là niềm vui của tôi 🥶. Tuyệt vời hơn nữa khi tôi được vào một lớp không hẳn là giỏi về học thức nhưng hoàn hảo về tinh thần và đoàn kết một cách cực đoan! Lớp tôi luôn chia sẻ nhiều thứ cho tôi nghe, về cuộc sống của mọi người😶. Một cô chủ nhiệm hết sức dễ thương và yêu học sinh(Chưa chồng sinh năm 97), luôn tìm cách phát triển lớp học một cách khoa học nhất, đã thay đổi nhiều lần nhưng vẫn không ăn thua với lớp tôi 😂. Nhưng tôi vẫn quý cô 😆
+
+**[Tình cảm]**
+
+Tôi thiên về não phải nên tôi rất giàu tình cảm. Tôi yêu động vật, nhưng ăn được thì không thương. Cực kì thích mèo😆. Còn tình cảm đôi lứa thì sao nhỉ 🧐. Tôi cũng có khá là nhiều mối tình linh tinh, nhưng gần đây tôi mới chấm dứt một mối quan hệ, và biết đâu lại có một mối tình mới nhở 😂. Dù tôi cũng rất kiêng kị việc này khi còn đi học, khá nhiều khả năng nó chỉ là vật cản đường.
+
+**[Ngoài lề]**
+
+Tôi thấy thật thoải mái khi nói ra hết mấy lời trên 😂. Nó là con người thật của tôi. Không tâng bốc hay nói quá. Mọi thứ đều là sự thật😶. Tôi đang bị ép bởi suy nghĩ kiếm tiền hơn là suy nghĩ học hành 🙁 Chắc tôi đang tự biện minh cho sự lười biếng của mình thôi 🧎
+
+Tuyệt vời khi có người đọc tới đây 🥺
+
+P/s: Gửi thằng Huy năm 2022. Năm sau mày mà vẫn thảm hại như này thì đừng có mà Share bài này về. Cảm ơn 🦶 thằng đầu đất. Cố gắng học tốt hơn vào . Pls....

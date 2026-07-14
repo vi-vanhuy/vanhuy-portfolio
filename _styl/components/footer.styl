@@ -3,33 +3,28 @@
 --------------------------------------------------------------------*/
 
 .main-footer
-  margin-top: 4rem
-  font-size: var(--font-sm)
+  align-self: end
+  padding: 1.5em var(--body-padding)
+  display: flex
+  flex-wrap: wrap
+  gap: 1em
+  background-color: var(--nav-bg-color)
+  border-top: $ui-border
+  font-size: var(--font-xs)
 
-  .footer-links
-    padding: 1em 0 .8em
-    display: flex
-    gap: .5em 1.5em
-    justify-content: space-between
+  @media screen and (max-width: $bp-sm)
+    flex-direction: column
     align-items: center
-    border-top: $ui-border-thick
-    border-bottom: $ui-border-thick
-    line-height: 1
-    font-family: $font-light
+  @media screen and (min-width: $bp-sm + 1)
+    justify-content: space-between
 
-    @media screen and (max-width: $bp-xs)
-      flex-direction: column
+  nav
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: .3em 1em
+    text-transform: uppercase
 
-    nav
-      display: flex
-
-      @media screen and (max-width: $bp-xs)
-        justify-content: center
-
-      &.links
-        gap: .75em
-      &.icons
-        gap: .5em
-
-    a
+    a:not(.social)
       link-alt()

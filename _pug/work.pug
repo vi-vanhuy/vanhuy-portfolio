@@ -2,133 +2,153 @@ extends _layout
 
 block vars
   - var pageTitle = 'Work'
-  - var pageDescription = 'A collection of Lynn Fisher’s weird web projects including A Single Div, Dress David Rose, and Nestflix.'
+  - var pageDescription = 'Work & Projects — STARTUP BUILDER & DIGITAL MARKETING. Nền tảng, hệ thống và các dự án tôi đã thực hiện.'
   - var pagePath = 'work'
   - var bodyClass = 'work'
 
 block header
 
-  p.chapter II
-  h1#content Work
+  h1 Work & Projects
+  .callout
+    small Tập trung vào tốc độ triển khai, chi phí tối giản và khả năng đưa ý tưởng thành sản phẩm vận hành được.
 
 block content
 
-  ul.archive-list
-    li.project.nestflix
-      a.archive-image(href='https://nestflix.fun')
-        picture
-          source(srcset='/assets/images/web-nestflix.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-nestflix-sm.jpg', width='1150', height='700', alt='Nestflix logo over a grid of movie and tv show thumbnails', decoding='async')
-      .links
-        small: a(href='https://nestflix.fun') Nestflix
-        small: a(href='https://nestflix.fun') nestflix.fun
-    li.project.concerts
-      a.archive-image(href='https://concerts.lynnandtonic.com')
-        picture
-          source(srcset='/assets/images/web-concerts.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-concerts-sm.jpg', width='1150', height='700', alt='yellow background with black Dyno label maker text: Lynn Fisher’s Concert Archive', decoding='async')
-      .links
-        small: a(href='https://concerts.lynnandtonic.com') Concert Archive
-        small: a(href='https://concerts.lynnandtonic.com') concerts.lynnandtonic.com
-    li.project.david-rose
-      a.archive-image(href='https://davidrose.style')
-        img(src='/assets/images/web-david-rose.svg', width='1150', height='700', alt='David Rose in three different outfits that say Dress David Rose', decoding='async')
-      .links
-        small: a(href='https://davidrose.style') Dress David Rose
-        small: a(href='https://davidrose.style') davidrose.style
-    li.project.airport-codes
-      a.archive-image(href='https://airportcod.es')
-        picture
-          source(srcset='/assets/images/web-airport-codes.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-airport-codes-sm.jpg', width='1150', height='700', alt='a screenshot of the Airport Codes website, featuring a grid of airports each identified by a photo and its three-letter IATA code', decoding='async')
-      .links
-        small: a(href='https://airportcod.es') Airport Codes
-        small: a(href='https://airportcod.es') airportcod.es
-    li.project.asinglediv
-      a.archive-image(href='https://a.singlediv.com')
-        picture
-          source(srcset='/assets/images/web-a-single-div.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-a-single-div-sm.jpg', width='1150', height='700', alt='a grid of illustrations including Frida Kahlo, Spaceship Earth, Cheez-It crackers, and more', decoding='async')
-      .links
-        small: a(href='https://a.singlediv.com') A Single Div
-        small: a(href='https://a.singlediv.com') a.singlediv.com
-    li.project.oss-cards
-      a.archive-image(href='https://oss.cards')
-        img(src='/assets/images/web-oss-cards.svg', width='1150', height='700', alt='a developer pun Valentine’s card featuring a happy Earth saying “You had me at Hello World”', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://oss.cards') Open Source, Open Hearts
-        small: a(href='https://oss.cards') oss.cards
-    li.project.us-flags
-      a.archive-image(href='https://usflags.design')
-        img(src='/assets/images/web-us-flags.svg', width='1150', height='700', alt='the flag of New Mexico', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://usflags.design') US Flags [dot] Design
-        small: a(href='https://usflags.design') usflags.design
-    li.project.top-chef
-      a.archive-image(href='https://topchefstats.com')
-        picture
-          source(srcset='/assets/images/web-top-chef-stats.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-top-chef-stats-sm.jpg', width='1150', height='700', alt='a screenshot of the Top Chef Stats site, showing rankings and stats with numbers and little chef heads', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://topchefstats.com') Top Chef Stats
-        small: a(href='https://topchefstats.com') topchefstats.com
-    li.project.food-place
-      a.archive-image(href='https://thefoodplace.cafe')
-        img(src='/assets/images/web-the-food-place.svg', width='1150', height='700', alt='The Food Place: a modern eatery for this life and after', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://thefoodplace.cafe') The Food Place
-        small: a(href='https://thefoodplace.cafe') thefoodplace.cafe
-    li.project.hollywood-age-gap
-      a.archive-image(href='https://hollywoodagegap.com')
-        img(src='/assets/images/web-hollywood-age-gap.svg', width='1150', height='700', alt='Hollywood Age Gap', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://hollywoodagegap.com') Hollywood Age Gap
-        small: a(href='https://hollywoodagegap.com') hollywoodagegap.com
-    li.project.whyaz
-      a.archive-image(href='https://why.az')
-        img(src='/assets/images/web-whyaz.svg', width='1150', height='700', alt='Arizona flag', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://why.az') WhyAZ
-        small: a(href='https://why.az') why.az
-    li.project.dusting-zone
-      a.archive-image(href='https://thedusting.zone')
-        picture
-          source(srcset='/assets/images/web-the-dusting-zone.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-the-dusting-zone-sm.jpg', width='1150', height='700', alt='The Dusting Zone', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://thedusting.zone') The Dusting Zone
-        small: a(href='https://thedusting.zone') thedusting.zone
-    li.project.portfolio
-      a.archive-image(href='/archive')
-        picture
-          source(srcset='/assets/images/web-lynnandtonic.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-lynnandtonic-sm.jpg', width='1150', height='700', alt='2019 version of lynnandtonic.com', decoding='async', loading='lazy')
-      .links
-        small: a(href='/archive') Portfolio
-        small: a(href='/archive') lynnandtonic.com
-    li.project.manual
-      a.archive-image(href='https://stylestage.dev/styles/manual/')
-        picture
-          source(srcset='/assets/images/web-style-stage.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-style-stage-sm.jpg', width='1150', height='700', alt='Style Stage: a one page website styled like an unfolded paper manual', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://stylestage.dev/styles/manual/') Manual
-        small: a(href='https://stylestage.dev/styles/manual/') stylestage.dev
-    li.project.cabinet
-      a.archive-image(href='https://codepen.io/collection/AGYwRe')
-        picture
-          source(srcset='/assets/images/web-codepen.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-codepen-sm.jpg', width='1150', height='700', alt='an image effect that makes a photo look like a folded poster', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://codepen.io/collection/AGYwRe') CSS Photo Effects
-        small: a.icon.codepen(href='https://codepen.io/collection/AGYwRe', title='a CodePen project')
-          include ../_assets/images/social-codepen.svg
-    li.project.cabinet
-      a.archive-image(href='https://codepen.io/lynnandtonic/pen/LYGjqOo')
-        picture
-          source(srcset='/assets/images/web-collectors-cabinet.jpg', media='(min-width: 700px)')
-          img(src='/assets/images/web-collectors-cabinet-sm.jpg', width='1150', height='700', alt='illustration of a curio shelf filled with trinkets and collectables', decoding='async', loading='lazy')
-      .links
-        small: a(href='https://codepen.io/lynnandtonic/pen/LYGjqOo') CSS Collector’s Cabinet
-        small: a.icon.codepen(href='https://codepen.io/lynnandtonic/pen/LYGjqOo', title='a CodePen project')
-          include ../_assets/images/social-codepen.svg
+  .content
+
+    p Tôi bắt đầu làm freelancer từ năm 16 tuổi với Digital Marketing, sau đó mở rộng sang website, hệ thống vận hành và phát triển sản phẩm.
+
+    p Trong hơn 5 năm qua, tôi đã làm việc cùng agency, startup và các doanh nghiệp ở nhiều lĩnh vực khác nhau. Điều tôi thích nhất không phải là một công nghệ cụ thể hay một kênh marketing cụ thể, mà là quá trình biến một ý tưởng thành thứ có thể hoạt động trong thực tế.
+
+    p Tôi từng tham gia triển khai các chiến dịch marketing, xây dựng website, phát triển nền tảng đặt hàng B2B, marketplace trong ngành du lịch và nhiều hệ thống phục vụ hoạt động kinh doanh. Những trải nghiệm đó giúp tôi hiểu cách khách hàng, sản phẩm, vận hành và tăng trưởng kết nối với nhau.
+
+    p Hiện tại, tôi tập trung vào việc xây dựng sản phẩm số, tối ưu quy trình vận hành và phát triển các dự án startup.
+
+    hr
+
+    h2 Dự án tiêu biểu
+
+    h3
+      a(href='https://netbooking.vn') NetBooking.vn
+    ul.links.unstyled
+      li
+        span Marketplace Platform & Operations
+        span.date Đà Lạt
+    p Nền tảng kết nối chủ lưu trú và cộng tác viên kinh doanh trong ngành du lịch. Tôi tham gia từ giai đoạn ý tưởng, xây dựng mô hình kinh doanh, phát triển sản phẩm, hệ thống vận hành và mạng lưới đối tác.
+    p #[strong Kết quả nổi bật:]
+    ul
+      li MVP hoàn thành trong 3 tháng.
+      li 300+ chủ lưu trú tham gia hệ thống.
+      li 100+ cộng tác viên kinh doanh hoạt động.
+      li Quản lý hơn 500 phòng tại khu vực Đà Lạt.
+    p #[em Bài học:] Marketplace không chỉ là xây dựng sản phẩm. Thách thức lớn nhất nằm ở việc cân bằng cung và cầu để hệ thống có thể tự vận hành.
+
+    hr
+
+    h3
+      a(href='https://sithethao.com') Sithethao.com
+    ul.links.unstyled
+      li
+        span B2B Ordering Platform
+        span.date Online
+    p Nền tảng đặt hàng B2B cho ngành in ấn. Tôi tham gia trong giai đoạn đầu, phụ trách marketing, hệ thống và các giải pháp hỗ trợ vận hành.
+    p #[strong Kết quả nổi bật:]
+    ul
+      li Hệ thống được đưa vào vận hành thực tế trong khoảng 2 tháng.
+      li Đồng hành chặt chẽ từ giai đoạn đầu phát triển.
+      li Doanh thu tăng trưởng từ 0 lên hơn 20 tỷ đồng trong thời gian làm việc.
+    p #[em Bài học:] Một hệ thống tốt phải phục vụ đúng quy trình thực tế của doanh nghiệp thay vì buộc doanh nghiệp thay đổi để phù hợp với hệ thống.
+
+    hr
+
+    h3
+      a(href='https://conversionmarcom.vn') ConversionMarcom
+    ul.links.unstyled
+      li
+        span Agency CMS Platform
+        span.date 3 Days to Launch
+    p Website và hệ thống phục vụ hoạt động marketing và bán hàng cho agency.
+    p #[strong Kết quả nổi bật:]
+    ul
+      li Hoàn thành và bàn giao trong 3 ngày.
+      li CMS quản lý nội dung linh hoạt.
+      li Cấu trúc tối ưu SEO (SEO-ready).
+      li Hỗ trợ hiệu quả hoạt động marketing và lead generation.
+    p #[em Bài học:] Trong nhiều trường hợp, tốc độ triển khai quan trọng hơn việc cố gắng xây dựng một giải pháp hoàn hảo ngay từ đầu.
+
+    hr
+
+    h3
+      a(href='https://annamvillage.com') Annam Village
+    ul.links.unstyled
+      li
+        span Brand Presence & CMS
+        span.date 15 Days to Launch
+    p Website thương hiệu dịch vụ lưu trú cao cấp.
+    p #[strong Kết quả nổi bật:]
+    ul
+      li Hoàn thành thiết kế và phát triển trong 15 ngày.
+      li Hệ thống quản trị nội dung dễ sử dụng.
+      li Cấu trúc SEO cơ bản, hỗ trợ doanh nghiệp nhanh chóng xây dựng hiện diện số.
+
+    hr
+
+    h3
+      a(href='https://nhatrangfood.com') NhaTrangFood
+    ul.links.unstyled
+      li
+        span E-commerce & Operations
+        span.date Tự vận hành
+    p Dự án thương mại điện tử do tôi tự xây dựng và vận hành. Từ website, quảng cáo, nội dung đến xử lý đơn hàng đều được thực hiện với nguồn lực rất nhỏ.
+    p #[strong Kết quả nổi bật:]
+    ul
+      li Hơn 200 đơn hàng được xử lý và giao nhận.
+      li Tự xây dựng toàn bộ hệ thống bán hàng và phễu khách hàng từ đầu.
+    p #[em Bài học:] Không phải dự án nào cũng cần scale lớn. Đôi khi giá trị lớn nhất nằm ở những bài học thực tế về dòng tiền, vận hành và kiểm chứng thị trường.
+
+    hr
+
+    h3
+      a(href='https://easyprint.com.vn') EasyPrint
+    ul.links.unstyled
+      li
+        span Automation Print Demo
+        span.date AI Research
+    p Dự án thử nghiệm giải quyết bài toán trong ngành in ấn. Ý tưởng xuất phát từ việc khách hàng thường phải chờ designer lên bản demo trước khi ra quyết định đặt hàng. Mục tiêu của EasyPrint là tự động hóa bước tạo demo để rút ngắn thời gian tư vấn từ hàng giờ xuống còn vài phút.
+    p #[em Bài học:] Những sản phẩm tốt nhất thường bắt đầu từ một vấn đề rất cụ thể và vô cùng thực tế.
+
+    hr
+
+    h2 Kinh nghiệm làm việc
+
+    h3 ConversionMarcom Agency
+    ul.links.unstyled
+      li
+        span Digital Marketing & MarTech
+        span.date 2021 – 2024
+    p Tham gia triển khai các chiến dịch Digital Marketing, website và giải pháp hỗ trợ kinh doanh cho nhiều đối tác của agency.
+    p #[strong Khách hàng tiêu biểu:]
+    ul
+      li Honda
+      li Milo
+      li Sun Group
+      li Hương Sen Healthcare
+    p #[strong Công việc bao gồm:]
+    ul
+      li Facebook Ads & Performance campaigns.
+      li SEO & Landing page optimization.
+      li Website Development & CMS setups.
+      li Shopee & E-commerce store management.
+      li Content strategy & Conversion optimization.
+
+    hr
+
+    h2 Hiện tại tôi quan tâm
+
+    p Tôi luôn hứng thú với những bài toán mới, những dự án đang ở giai đoạn đầu và những ý tưởng có khả năng tạo ra giá trị thực cho người dùng. Các lĩnh vực tôi đặc biệt quan tâm hiện tại bao gồm:
+    ul
+      li Công nghệ du lịch (TravelTech) & Marketplace Platform.
+      li Ứng dụng AI vào nghiên cứu và tối ưu vận hành doanh nghiệp.
+      li Tăng trưởng sản phẩm số (Product Growth).
+      li Tham gia và phát triển Startup giai đoạn đầu (Early-stage startup).
+      li Thiết lập hệ thống giúp doanh nghiệp vận hành hiệu quả hơn.

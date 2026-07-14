@@ -4,44 +4,45 @@
 
 .thought-detail
 
+  h1, h2, h3, h4, h5, h6
+    font-family: $font-base
+
   .header-main
 
     h1
-      font-size: var(--font-lg)
-
-      @media screen and (max-width: $bp-sm - 1)
-        font-size: calc(var(--font-lg) - .3rem)
-
-    .date
-      margin: 2em 0
+      font-size: clamp(1.8rem, 4.5vw, 3rem)
+      line-height: 1.2
+      text-transform: none
+      grid-row: 1
+      grid-column: 1
 
   .thoughts-nav
     width: 100%
-    margin-top: 4rem
     display: grid
     grid-template-columns: repeat(3,1fr)
-    gap: 1em
-    align-items: center
-    font-size: var(--font-sm)
+    align-items: stretch
+    line-height: 1.1
+    border-top: $ui-border
 
     a
       link-alt()
 
-    .back
-      text-align: center
+    & > *
+      padding: 1em
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: .3em
+      font-size: var(--font-sm)
+    
+    & > :not(:first-child)
+      border-left: $ui-border
+
     .earlier
+      grid-column: 3
+    .back
+      grid-column: 2
+      text-align: center
+    .later
+      grid-column: 1
       text-align: right
-
-  // Do I want to do this?
-  .content
-
-    @media screen and (min-width: 690px)
-      img
-        position: relative
-        transition: transform 100ms ease-in-out
-      figure.zoom img:hover,
-      img.zoom:hover
-        transform: scale(1.5)
-        z-index: 100
-        &:not([src$='.png'])
-          box-shadow: 0 10px 10px -4px black(.3)

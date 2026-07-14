@@ -12,49 +12,25 @@
 
 html
   height: 100%
-  color-scheme: light dark
 
-  &[data-user-color-scheme="light"]
-    color-scheme: light
-
-  &[data-user-color-scheme="dark"]
-    color-scheme: dark
+  &:has(body.thought-detail)
+    scroll-padding-top: calc(var(--nav-height) + 10px);
 
 body
   width: 100%
-  min-height: 100%
-  display: grid
-  background-color: var(--bg-color)
-  background-image: url(/assets/images/bg-pattern.jpg)
-  background-repeat: repeat
-  background-position: fixed
-  background-size: 1400px auto
+  height: 100%
+  padding-top: var(--nav-height)
   font-family: $font-base
   font-size: var(--font-base)
   font-weight: 300
-  line-height: 1.6
+  line-height: 1.5
   color: var(--text-color)
-  
-  @media screen and (min-width: $bp-sm)
-    justify-content: center
+  background-color: var(--bg-color)
 
-@media (prefers-color-scheme: dark)
-  :root:not([data-user-color-scheme])
-    body
-      background-image: url(/assets/images/bg-pattern-dark.jpg)
-
-[data-user-color-scheme='dark']
-  body
-    background-image: url(/assets/images/bg-pattern-dark.jpg)
-
-.app
-  width: calc(100% - var(--content-padding) * 2)
-  margin: var(--content-padding)
-  transition: transform 100ms cubic-bezier(0.175, 0.885, 0.12, 1.775)
-  transform: scale(1,1)
-  
-  @media screen and (min-width: $bp-sm)
-    width: calc(500px - var(--content-padding) * 2)
+  &:not(.home)
+    min-height: 100%
+    display: grid
+    align-items: start
 
 .visually-hidden,
 .screenreader
@@ -66,7 +42,7 @@ img
   height: auto
   display: block
 
-// -----------------------------
+//-----------------------------
 // helpers
 
 .center
@@ -76,4 +52,4 @@ img
   display: none
 
 .mb0
-  margin-bottom: 0
+  margin-bottom: 0 !important

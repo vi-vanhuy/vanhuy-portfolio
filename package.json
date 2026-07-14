@@ -3,11 +3,13 @@
   "version": "19.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lynnandtonic/lynnandtonic.com.git"
+    "url": "git://github.com/vi-vanhuy/vanhuy-portfolio.git"
   },
   "scripts": {
     "start": "grunt serve",
-    "build": "grunt build"
+    "build": "grunt build",
+    "thoughts:build": "node scripts/build-thoughts.js",
+    "thoughts:new": "node scripts/new-post.js"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.14.0",
@@ -28,6 +30,7 @@
     "grunt-css-mqpacker": "^3.0.1",
     "grunt-postcss-import": "^0.0.1",
     "jstransformer-markdown-it": "^2.1.0",
+    "markdown-it": "^8.4.2",
     "svpug": "^0.1.4"
   }
 }
