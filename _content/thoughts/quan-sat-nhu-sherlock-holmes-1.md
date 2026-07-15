@@ -9,7 +9,7 @@ description: Quan sát không phải là nhìn thấy nhiều hơn người khá
   luận đến mức bằng chứng cho phép.
 draft: false
 ---
-Tôi là một người yêu thích Sherlock Holmes dù chưa từng đọc hết toàn bộ truyện. Sách thì mua về để ở nhà đọc 1 nửa, còn phim lại xem khá chăm. Tôi cũng từng là người đầu tiên thành lập một group fan Sherlock Vietnam trên Facebook, đến giờ vẫn còn là Admin nhưng không còn hứng thú xây dựng nữa. Nói thẳng ra là lười rồi.
+Tôi là một người yêu thích Sherlock Holmes. Tôi cũng từng là người đầu tiên thành lập một group fan Sherlock Vietnam trên Facebook, đến giờ vẫn còn là Admin nhưng không còn hứng thú xây dựng nữa. Nói thẳng ra là lười rồi.
 
 Tôi thích Sherlock vì ông ta thông minh vcđ. Conan Doyle thực sự quá xuất sắc khi xây dựng được một nhân vật có khả năng nhìn vào những thứ rất bình thường, sau đó tìm ra điều mà tất cả những người xung quanh đều bỏ qua. Holmes bước vào một căn phòng, nhìn quần áo, giày dép, bàn tay và những món đồ một người mang theo rồi bắt đầu dựng lại những gì có thể đã xảy ra.
 
