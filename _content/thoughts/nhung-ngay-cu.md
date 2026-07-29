@@ -1,0 +1,80 @@
+---
+title: Những ngày cũ
+slug: nhung-ngay-cu
+date: 2026-07-29
+displayDate: 29/07/2026
+order: 0
+description: Mình nhớ những ký ức cũ và muốn ghi lại, để chẳng may sau này không
+  còn nhớ gì nữa thì ít nhất chúng vẫn còn ở đây.
+draft: false
+---
+Mình nhớ những ký ức cũ và muốn ghi lại, để chẳng may sau này không còn nhớ gì nữa thì ít nhất chúng vẫn còn ở đây.
+
+Trước đây, nhà mình ở sát đê. Phía bên kia đê là con sông Lạch Tray, ngăn cách giữa Hải Phòng và Hải Dương. Bố mẹ mình lấy nhau sớm lắm. Năm 19 tuổi, bố đã lấy mẹ rồi, lúc ấy mẹ mới 17 tuổi. Có một thời gian bố mẹ ở cùng nhà nội. Cũng không ai kể rõ bố mẹ mình đã sống chung với ông bà nội bao lâu, nhưng xét tính cách của bà thì khả năng cao mẹ mình cũng bị mắng nhiều. Mình nghĩ vì lý do đó nên bố đã sớm tách ra ngoài ở riêng. Lúc ấy bố có khi bằng tuổi mình bây giờ, khoảng 21 tuổi. Mình không hiểu tại sao một người bằng tuổi mình lại có thể lập gia đình, cất nhà, lập vườn. Giờ có cho mình tiền thì mình cũng bó tay, không làm nổi, kể cả biết rằng khoảng cách giữa các thế hệ là khác nhau.
+
+Có một chuyện nữa mà mình được kể lại, đó là khi mẹ sinh đứa con đầu lòng, chính là chị gái mình bây giờ. Chị sinh non, thiếu cân, hình như chỉ được một cân tám. Chị phải nằm trong lồng kính vài tuần nhưng tình hình vẫn không khá hơn là bao. Cuối cùng, bố mẹ quyết định đưa chị về vì không còn đủ tiền để tiếp tục lo viện phí nữa. Nếu là mình trong hoàn cảnh đó, mình không biết bản thân hay bất kỳ ai có đủ bản lĩnh để vượt qua giống bố mẹ mình hay không. Chắc chắn đó là một giai đoạn quá kinh khủng. Nhưng may mắn là bà chị gái mình sau khi được đưa về nhà lại dần khỏe mạnh. Giờ thì béo như con tịnh, thế mà hay.
+
+Nhà mình trước đây là một gian nhà cấp bốn, có hai cái giường, một cái tủ và một chiếc tivi khoảng 14–15 inch gì đó, có màu chứ không phải đen trắng. Sau nhà là ruộng của nhà thờ, nhà mình được phép cấy lúa ở đấy. Trước nhà là một cái sân và ao cá lớn, xung quanh ao và quanh nhà là vườn vải. Cạnh nhà còn có khu sinh hoạt, bếp, bể nước mưa và nhà tắm nữa.
+
+Tuổi thơ của mình là những ngày được câu cá, làm lao xiên cá, bắt cáy rồi vặt trộm hoa quả nhà hàng xóm. Mình nhớ những ngày trèo tít lên ngọn cây sắn thuyền, ngồi ăn mấy quả sắn đỏ đỏ, nhỏ nhỏ, có vị ngọt ngọt, chát chát rồi suy nghĩ vẩn vơ trên cây. Lúc leo xuống thì mồm đỏ lòm, đến tối ăn cơm là mất luôn vị giác. Những ký ức từ thời còn học mầm non ở nhà văn hóa thôn giờ đã khá mờ nhạt. Khi ấy, mình với chú mình, hai đứa bằng tuổi nhau, được mấy cô cho sang các lớp bên cạnh để quản mấy đứa bé tuổi hơn. Mình còn nhớ cả cảm giác sau khi đi ị xong, các cô đeo loại găng tay nhựa sần sần giống găng tay rửa bát để rửa đít cho. Vừa đau vừa thích =)).
+
+Có một lần, do thôn mình sửa lại nhà văn hóa nên bọn mình phải chuyển lên thôn trên học. Ở đây, mình gặp nhiều bạn mới, có những đứa đến tận bây giờ vẫn còn chơi cùng, như thằng Hoàng với thằng Vinh. Có lần mình thích bạn nữ nào đấy, xong tìm cách ngồi cạnh rồi thơm má bạn. Giờ mình cũng chẳng biết bạn là ai, đang ở đâu, là đứa nào mới đau chứ. Không biết bạn có nhớ gì không.
+
+Mình nhớ lần đầu đi học lớp Một, bố chở mình đi nhận lớp. Thế nào mình lại vào lớp C, còn chú mình lại được vào lớp A. Tại sao lúc đó lại có thể chọn lớp, hoặc người ta lấy cơ sở nào để sắp xếp như thế, mình cũng không rõ nữa.
+
+Mình khó chịu bởi vì mình luôn bị đem ra so sánh với chú trong bất kể trường hợp nào. Chắc vì hai đứa bằng tuổi nhau nên trở thành hai đối tượng dễ so sánh nhất. Nhưng phải nói thật là mình học dốt hơn chú mình thật. Chuyện đó diễn ra từ bé cho đến tận khi học đại học luôn.
+
+Mình nhớ ngay sau buổi học đầu tiên, trong bữa ăn trưa, mình nói với bố mẹ rằng:
+
+“Con quen rồi. Giờ chỉ cần nghe tiếng trống là sẽ vào lớp, vào lớp mà nghe tiếng trống thì sẽ ra chơi.”
+
+Lúc ấy, mình thấy bố mẹ cười. Chắc chắn tiếng cười đó là vì sự ngây thơ của một đứa trẻ. Mình luôn thích cảm giác này, bởi vì nó thật và trong sáng. Có lẽ đó là một trong những tiếng cười hạnh phúc nhất của cuộc đời.
+
+Những ngày sau đó diễn ra khá êm ả. Trong đầu mình khi ấy chỉ có suy nghĩ học xong về sẽ được ăn gì, chơi gì mà thôi. Những năm đầu lớp 1, lớp 2, mình thường được chị thứ 2 đón về nhà. Hai chị em hay ghé qua nhà cụ. Lúc đó cụ mình vẫn còn sống, lần nào vào cụ cũng cho bánh, cho kẹo. Mình cực kỳ thích cái chum nước mưa cụ để sau nhà. Đi học về nóng kinh khủng, uống một ca nước vừa mát vừa ngọt. Không hiểu sao nước lại ngọt nữa, chẳng biết cụ có đổ thêm đường vào đấy không.
+
+Sau đó cụ mất đúng vào một ngày mình đi học. Bố xin cho mình nghỉ để về đưa cụ. Nhưng lúc ấy mình lại không có cảm giác gì cả, cũng không hiểu tại sao. Mình nghĩ rằng mình phải kêu gào thảm thiết, phải khóc um lên cho mọi người biết, nhưng cuối cùng mình không rơi một giọt nước mắt nào.
+
+Ngày thường, mẹ mình sẽ nấu cơm buổi sáng cho cả nhà, thường là rang cơm. Mình không thể tìm lại được cảm giác này ở bất kỳ đâu nữa. Mẹ rang cơm bằng bếp củi, dùng chảo gang, mỡ lợn, hôm thì có trứng, hôm thì không. Nhưng đó vẫn là món cơm rang ngon nhất: có mùi khói thơm và những hạt cơm cháy cạnh. \
+Hôm nào mẹ không nấu được thì sẽ cho chị em mình khoảng năm nghìn để mua tạm thứ gì đó ăn khi đi học. Mình có một ký ức khá mờ nhạt về một hôm mình không ăn sáng, sau đó bị chóng mặt nên cô giáo cho vào phòng y tế nằm. Cô hỏi mình đã ăn gì chưa, mình bảo chưa, thế là cô cho mình một nắm xôi. Nhưng mình lại không ăn được đồ nếp. Trưa hôm đó, bố đến đón mình về rồi chửi chị mình vì không cho mình ăn. Lúc ấy mình chẳng hiểu tại sao bố lại chửi chị nặng như vậy. Sau khi lớn lên mình mới hiểu, đó không chỉ đơn thuần là việc bố mẹ lo cho mình, mà còn liên quan đến lòng tự trọng.
+
+Việc cô cho mình nắm xôi có thể khiến bố cảm thấy giống như gia đình mình không có tiền lo cho con cái, để con phải chịu đói rồi được người khác cho ăn. Dù thực tế chỉ là do mình không chịu ăn, chứ bố mẹ mình chưa bao giờ để con cái như vậy.
+
+Năm lớp Bốn, vào một ngày mưa lớn, sấm chớp dữ dội lắm. Mình được họ hàng chở vào nhà họ trong làng để tránh mưa. Cũng chính lúc ấy, bi kịch xảy ra. Xung quanh nhà mình có rất nhiều cây, bên cạnh còn có một cây sung lớn. Sét đánh trúng cây sung đó, khiến bố mẹ mình đang ngồi trong nhà cũng bị ảnh hưởng. Đến khi tạnh mưa, mình trở về nhà mới biết chuyện. May mắn là bố mẹ chỉ bị ngất, vì lúc đó cả hai người đều đang ngồi dưới nền nhà, ngóng mình về. Từ đợt ấy, cứ thấy trời mưa kèm sấm sét là cả nhà mình trèo hết lên giường, không ai dám đi đâu.
+
+Từ lúc mình bắt đầu có nhận thức cho đến nay, mình chưa từng thấy bố mẹ làm điều gì sai trái. Hai người đều thật thà, chất phác. Nên mình nghĩ chắc cũng một phần vì thế mà ông trời không làm gì bố mẹ mình đâu. Bố mình là người nóng tính, ít nói và thường suy nghĩ kỹ trước khi làm bất kỳ điều gì. Mẹ thì nói liên tục, sống cảm xúc, hở tí là có thể khóc ngay. Mình chỉ chứng kiến bố mẹ cãi nhau đúng một lần trong đời mà đến giờ không còn nhớ lý do là gì. Mẹ thì khóc um khóc oa, bố thì đánh mẹ, nhưng mà đánh nhẹ. Hai chị mình lúc ấy chạy vào can bố mẹ. Sau đó, trong bữa cơm chỉ còn bố với mình ngồi ăn.
+
+Mình không hiểu chuyện gì đang xảy ra. Lúc ấy mình cũng không biết phải làm gì và gần như không có cảm xúc gì cả.
+
+Lớp Năm cũng là năm mình tụ họp với mấy anh em trong làng đi săn tổ chim. Bọn mình nhảy qua hàng trăm cái rãnh, ngó hàng nghìn cái cây để tìm tổ chim, mặc dù chẳng bao giờ bắt về nuôi. Thường thì bọn mình toàn lấy trứng về ăn. Tổ nào trứng đã nở rồi thì để yên ở đó cho chim non lớn lên rồi bay đi.
+
+Mình còn phân biệt được trứng nào là của chim gì, tổ nào là của loài nào, vì mỗi loại chim có một cách làm tổ khác nhau. Ví dụ, chim cu thường đan tổ bằng mấy cái que rồi xếp chồng lên nhau. Chào mào làm tổ bằng lông, dây leo và những que nhỏ. Chim vành khuyên thì làm bằng cỏ, cái tổ trông giống như một cái kén.
+
+Khó phân biệt nhất là tổ cò. Cò làm tổ trông như một đống rơm, chẳng khác gì tổ chuột. Tổ cò to lắm, đứng ở dưới cũng có thể nhìn thấy luôn. Nhưng chuột cũng có khi làm tổ trên cây. Vớ vẩn leo lên, không phải cò mà là chuột thì nó nhảy ra, sợ vãi cả đái, có khi rơi mẹ xuống đất.
+
+Rồi còn chuyện câu cá nữa. Mùa câu cá tốt nhất là mùa thu. Thường thì mình chỉ câu ở ao nhà thôi. Ao nhà thả toàn cá chim vì loại này lớn nhanh. Cá chim háu ăn lắm, mồi câu thường chỉ cần dùng thịt mỡ. Năm lớp Ba, mình câu được một con, nó khỏe đến mức kéo mẹ cả mình xuống ao luôn. Sau đó mình còn nghịch, thò tay vào mồm nó, thế là nó tợp cho mất một miếng thịt, máu chảy khiếp. Mẹ mình phải nhai lá rồi đắp vào vết thương cho mình.
+
+Cuối vườn nhà mình còn có một nhánh sông nhỏ. Mình với anh họ cũng hay ra đó câu vì ở đấy đa dạng các loại cá hơn. Có lần mình đi câu cùng ổng để mang cá về cho bà nội, nhưng ngồi mãi chẳng có con nào cắn câu. Thế là mình bày ra trò ném đất. Một thằng đứng đầu vườn, một thằng đứng cuối vườn, nhặt mấy cục đất trong vườn rồi ném nhau.
+
+Bọn mình ném mù thôi, vì tán vải rộng lắm, nhìn thẳng chẳng biết người kia đang ở đâu, phải cúi xuống nhìn chân mới thấy. Thế là hai anh em đứng cách nhau tầm một trăm mét, liên tục quăng đất về phía nhau. Một lúc sau, ổng gào lên:
+
+“Cắn rồi! Cắn rồi!”
+
+Mình giả điếc, vẫn tiếp tục quăng. Quăng mẹ vào đầu ổng mấy cục đất to đùng. Còn ổng thì vừa kéo được con cá quả lên bờ, vừa quay ra chửi mình -)). Cuối những năm tiểu học, nhà thờ tổ chức cho thanh niên Công giáo đi du lịch ở Hồ Núi Cốc. Mình muốn đi lắm nhưng bố không cho, vì ngày đi lại đúng vào ngày thi chuyển cấp. Ông nội đồng ý cho mình đi, thậm chí còn cho tiền luôn, nhưng bố vẫn nhất quyết không cho. Mình khóc um cả lên mà vẫn không thể thay đổi được ý định của ổng. Đến ngày thi chuyển cấp, mình còn không biết phải mang theo máy tính. Cả mùa hè cũng chẳng thèm ôn bài. Vào phòng thi, đọc đề méo hiểu gì, cuối cùng được ba điểm và vào lớp C. Cay nhất là có đứa trong làng mình bỏ thi để đi du lịch với nhà thờ, vậy mà cuối cùng nó cũng vào lớp C. Thế là mọi thứ thành công cốc.
+
+Mình thể hiện khá tốt ở lớp nên thầy Định cho mình làm lớp trưởng. Nói không phải khoe chứ hồi đầu năm mình học cũng khiếp lắm. Ban đầu còn dự tính sẽ được chuyển sang lớp A, nhưng chẳng hiểu sao cuối cùng vẫn ở lại lớp C. Thế là mình làm lớp trưởng suốt bốn năm. Dù vậy, sau đó học lực của mình dần giảm xuống. Vì mình chỉ học trên lớp, còn về nhà thì gần như không bao giờ học bài. Thành ra lúc học trên lớp thì có vẻ tốt, nhưng cứ đến lúc thi là điểm lại thấp. Thế mà hay.
+
+Lúc này, kinh tế gia đình mình cũng bắt đầu ổn định hơn. Chị mình không học đại học mà chỉ học hết cấp Ba rồi đi làm công nhân, giống như bao người khác trong khu vực. Mẹ mình sau đó cũng đi làm công nhân, chỉ còn bố ở nhà làm vườn. Bố kiếm thêm thu nhập bằng cách thả bát quái dưới sông để bắt tôm. Mình từng đi thu bát quái với bố mấy lần mà ớn, mệt lắm. Phải kéo bát quái từ dưới sông lên, bên trong lại chứa đầy nước nên rất nặng.
+
+Có những lần bắt được cá to thì mang về ăn, đủ mọi loại cá: cá nheo, cá bò, cá trê, rô phi… Chủ yếu là những loài ăn ở tầng đáy vì bát quái được thả sát đáy sông. Nhưng nhiều nhất chắc vẫn là cá dọn bể, hay còn gọi là cá lau kiếng. Mẹ tổ cái bọn cá dọn bể này. Ngoài Bắc không ai ăn nên bắt được toàn phải vứt đi. Chúng nó phá bờ kinh lắm, lại có nhiều gai nhọn và cứng nên làm hỏng cả rọ. Có buổi bố kéo lên được cả tạ cá dọn bể.
+
+Thả bát quái chủ yếu vẫn là để bắt tôm sông, vì loại này bán được giá lắm. Mỗi cân khoảng 250 nghìn, hôm nào bắt được ba cân là ấm túi. Trong các loại cá sông, mình thích cá nheo nhất vì loài này hay có trứng. Trứng cá nheo ăn béo, thịt cá cũng ngon, lại không có xương dăm. Đem nấu với chuối thì hết nước chấm, ngon kinh khủng.
+
+Trước đây, mỗi lần bố bảo mình đi thu bát quái cùng, mình đều thấy bực vì mệt. Có lần mình còn trốn không đi, khiến bố phải đi một mình. Nghĩ lại mới thấy mình đúng là đầu đất. Công việc nặng như thế mà làm một mình thì có khi gãy mẹ lưng. Vậy mà khi về, bố chẳng nói gì mình cả. Giờ nghĩ lại thấy day dứt quá.
+
+Sau đó, nhà mình xây nhà mới ở trong làng. Từ lúc ấy, cuộc sống của cả gia đình như bước sang một trang khác. Tivi cũng lớn hơn. Mình không còn đi bắt cá, bắt chim nữa mà chuyển sang nghiện điện tử với YouTube. Nhà cũ hiện tại vẫn được giữ lại vì bố mình còn làm vườn, nhưng giờ nó chỉ được dùng như một cái kho. Bố mẹ bảo rằng sau này mình lấy vợ thì hai người sẽ lại ra ngoài đó ở, nhường căn nhà hiện tại cho mình.
+
+Có mà thèm. Mình thích ở ngoài đó hơn.
+
+Tiếc rằng dự án Khu công nghiệp Kim Thành sắp khởi công. Vườn và căn nhà cũ của gia đình mình nằm trong vùng quy hoạch. Toàn bộ tuổi thơ của mình rồi sẽ được thay thế bằng nhà máy và những con đường lớn. Toàn bộ những gì bố đã gây dựng từ khi mới 19 tuổi rồi cũng sẽ chỉ còn lại trong ký ức.
+
+Đó cũng là dấu chấm hết cho một mảnh ghép tuổi thơ của mình.
