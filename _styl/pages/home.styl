@@ -25,23 +25,24 @@ body.home
 
   .warning
     max-width: min(100vw - 2em, 38rem)
-    padding: .9em 1.1em .85em
+    padding: .75em 1em
     position: fixed
     left: 1rem
     bottom: 1rem
     display: block
-    background-color: #f5f1d8
-    border: 1px solid #c9b99d
-    box-shadow: 0 1px 0 rgba(0, 0, 0, .08)
+    background-color: var(--nav-bg-color)
+    border: var(--border-width) solid var(--border-color)
+    box-shadow: none
     z-index: 20
 
     p
       margin: 0
-      font-family: Georgia, 'Times New Roman', serif
-      font-style: italic
-      font-size: clamp(1.05rem, 2vw, 1.6rem)
-      line-height: 1.2
-      color: #4d352b
+      font-family: system-ui, 'Segoe UI', Roboto, sans-serif
+      font-style: normal
+      font-size: var(--font-sm)
+      font-weight: 500
+      line-height: 1.4
+      color: var(--text-color)
       text-wrap: balance
 
     @media screen and (max-width: 500px)
