@@ -9,6 +9,8 @@ const CONTENT_DIR = path.join(ROOT, '_content/thoughts');
 const ENTRIES_DIR = path.join(ROOT, '_pug/thoughts/entries');
 const THOUGHTS_PUG = path.join(ROOT, '_pug/thoughts.pug');
 const RSS_FILE = path.join(ROOT, '_rss/feed.xml');
+const PUBLIC_DIR = path.join(ROOT, 'public');
+const SITEMAP_FILE = path.join(PUBLIC_DIR, 'sitemap.xml');
 
 const md = new MarkdownIt({
     html: true,
@@ -96,6 +98,49 @@ function xmlEscape(value) {
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&apos;');
+}
+
+function walkPugFiles(dir) {
+    return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+        const fullPath = path.join(dir, entry.name);
+
+        if (entry.isDirectory()) {
+            return walkPugFiles(fullPath);
+        }
+
+        return fullPath.endsWith('.pug') ? [fullPath] : [];
+    });
+}
+
+function isPublicPug(filePath) {
+    const relativePath = path.relative(path.join(ROOT, '_pug'), filePath).split(path.sep).join('/');
+    const segments = relativePath.split('/');
+    const baseName = path.basename(filePath);
+
+    if (!filePath.endsWith('.pug')) {
+        return false;
+    }
+
+    if (baseName === '404.pug' || baseName[0] === '_') {
+        return false;
+    }
+
+    if (segments.includes('includes')) {
+        return false;
+    }
+
+    return true;
+}
+
+function siteUrlFromPugPath(filePath) {
+    const relativePath = path.relative(path.join(ROOT, '_pug'), filePath).split(path.sep).join('/');
+    const route = relativePath.replace(/\.pug$/, '');
+
+    if (route === 'index') {
+        return `${SITE_URL}/`;
+    }
+
+    return `${SITE_URL}/${route}/`;
 }
 
 function rssDate(value) {
@@ -222,11 +267,37 @@ ${items}
 `;
 }
 
+function renderSitemap(posts) {
+    const urls = new Set();
+
+    walkPugFiles(path.join(ROOT, '_pug'))
+        .filter(isPublicPug)
+        .forEach((filePath) => {
+            urls.add(siteUrlFromPugPath(filePath));
+        });
+
+    posts.forEach((post) => {
+        urls.add(`${SITE_URL}/thoughts/entries/${post.slug}/`);
+    });
+
+    const items = Array.from(urls)
+        .sort()
+        .map((url) => `  <url><loc>${xmlEscape(url)}</loc></url>`)
+        .join('\n');
+
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${items}
+</urlset>
+`;
+}
+
 function main() {
     const posts = readPosts();
 
     ensureDir(ENTRIES_DIR);
     ensureDir(path.dirname(RSS_FILE));
+    ensureDir(PUBLIC_DIR);
 
     fs.readdirSync(ENTRIES_DIR)
         .filter((file) => file.endsWith('.pug'))
@@ -234,6 +305,7 @@ function main() {
 
     fs.writeFileSync(THOUGHTS_PUG, renderThoughtsIndex(posts));
     fs.writeFileSync(RSS_FILE, renderRss(posts));
+    fs.writeFileSync(SITEMAP_FILE, renderSitemap(posts));
 
     posts.forEach((post, index) => {
         const later = index > 0 ? posts[index - 1] : null;
