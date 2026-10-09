@@ -83,3 +83,60 @@
   .content
     h2
       font-family: $font-base
+
+    .work-intro
+      p + p
+        margin-top: .65em
+
+    .project-list
+      margin-top: 1em
+
+    .project-row
+      margin-top: 0
+      padding: 1.25em 0
+      border-top: $ui-border
+
+      *
+        margin-top: 0
+
+      h3
+        font-size: 1.35rem
+        font-family: $font-base
+        font-weight: 600
+        line-height: 1.35
+
+      .project-copy
+        margin-top: .6em
+
+      .project-role,
+      .project-date
+        margin-top: .45em
+        font-size: var(--font-sm)
+        line-height: 1.5
+
+      .project-date
+        opacity: .7
+
+      .project-result
+        margin-top: .5em
+        font-size: var(--font-sm)
+        opacity: .8
+
+      @media screen and (min-width: $bp-sm + 1)
+        display: grid
+        grid-template-columns: minmax(0, 185px) minmax(0, 1fr)
+        gap: 1.5em
+
+        .project-copy
+          margin-top: 0
+
+    .work-experience
+      padding-top: 1.5em
+      border-top: $ui-border
+
+      h2
+        margin-top: 0
+        font-size: var(--font-md)
+
+      p
+        margin-top: .7em

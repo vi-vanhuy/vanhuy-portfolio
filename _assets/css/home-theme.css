@@ -1,0 +1,103 @@
+/* Semantic colors: navy interface, ochre street walls, stone pavement.
+   Street materials retain their own palette in street-palette.css. */
+body.home {
+  --home-road: #DED5C2;
+  --home-canvas: #F5F0E5;
+  --home-ink: #173657;
+  --home-nav: #F7F3E9;
+  --home-line: #A9AFAC;
+  --home-accent: #23577D;
+  --home-focus: #DAE6EB;
+  --home-hoodie: #295780;
+  --home-hoodie-shadow: #1B3E60;
+  --home-pants: #46515B;
+  --home-pants-shadow: #303D49;
+  --home-bag: #243B4A;
+  --home-bag-line: #8196A0;
+  --home-skin: #FAC99F;
+  --home-skin-shadow: #E4AE84;
+  --bg-color: var(--home-road);
+  --text-color: var(--home-ink);
+  --nav-bg-color: var(--home-nav);
+  --border-color: var(--home-line);
+  --accent-color: var(--home-accent);
+  --btn-bg: var(--home-ink);
+  --btn-text: var(--home-nav);
+  --focus-text: var(--home-ink);
+  --focus-bg: var(--home-focus);
+  --focus-outline: var(--home-accent);
+  --glitch-color: rgba(18, 41, 60, .35);
+}
+/* The initial title scene uses warm ivory rather than road color. */
+:root:not(.growing):not(.shrinking) body.home {
+  --bg-color: var(--home-canvas);
+}
+body.home .main-nav::after { background-color: var(--home-ink); }
+body.home .main-nav .nav-home { color: var(--home-nav); }
+body.home .warning { border-color: var(--home-line); }
+body.home .walking {
+  --hoodie: var(--home-hoodie);
+  --hoodie-dark: var(--home-hoodie-shadow);
+  --pants: var(--home-pants);
+  --pants-dark: var(--home-bag);
+  --color4: var(--home-bag-line);
+  --skin: var(--home-skin);
+  --skin-shadow: var(--home-skin-shadow);
+  --shoes-check: #173657;
+  --shoes-fill: #EEE6D5;
+  --shoes-sole: #F9F4E9;
+}
+:root.shrinking body.home {
+  --home-hoodie: #224666;
+  --home-hoodie-shadow: #18344F;
+  --home-road: #D3CCBA;
+}
+/* Dark mode keeps warm ochre buildings and a neutral stone road. */
+:root[data-user-color-scheme="dark"] body.home {
+  --home-road: #343C3E;
+  --home-canvas: #12283C;
+  --home-ink: #EAE2CF;
+  --home-nav: #152E46;
+  --home-line: #51616A;
+  --home-accent: #A4C9DF;
+  --home-focus: #294B65;
+  --home-hoodie: #426E94;
+  --home-hoodie-shadow: #2D506E;
+  --home-pants: #59636C;
+  --home-pants-shadow: #414B55;
+  --home-bag: #253C4C;
+  --home-bag-line: #8196A0;
+  --home-skin: #DFB28E;
+  --home-skin-shadow: #BF8E6B;
+  --glitch-color: rgba(8, 22, 34, .7);
+}
+:root[data-user-color-scheme="dark"].shrinking body.home {
+  --home-hoodie: #345976;
+  --home-hoodie-shadow: #244059;
+  --home-road: #303735;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-user-color-scheme]) body.home {
+    --home-road: #343C3E;
+    --home-canvas: #12283C;
+    --home-ink: #EAE2CF;
+    --home-nav: #152E46;
+    --home-line: #51616A;
+    --home-accent: #A4C9DF;
+    --home-focus: #294B65;
+    --home-hoodie: #426E94;
+    --home-hoodie-shadow: #2D506E;
+    --home-pants: #59636C;
+    --home-pants-shadow: #414B55;
+    --home-bag: #253C4C;
+    --home-bag-line: #8196A0;
+    --home-skin: #DFB28E;
+    --home-skin-shadow: #BF8E6B;
+    --glitch-color: rgba(8, 22, 34, .7);
+  }
+  :root:not([data-user-color-scheme]).shrinking body.home {
+    --home-hoodie: #345976;
+    --home-hoodie-shadow: #244059;
+    --home-road: #303735;
+  }
+}

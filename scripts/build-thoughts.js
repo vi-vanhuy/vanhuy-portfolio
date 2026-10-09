@@ -172,7 +172,6 @@ function renderThoughtsIndex(posts) {
         '',
         'block header',
         '',
-        '  p.chapter III',
         '  h1#content Thoughts',
         '',
         'block content',

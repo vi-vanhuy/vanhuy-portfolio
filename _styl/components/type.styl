@@ -4,11 +4,24 @@
 
 h1, h2, h3
   font-family: $font-new-title
+  color: #173657
   line-height: 1.1
+
+  a
+    color: inherit
 
   em
     font-family: inherit
     font-style: italic
+
+@media (prefers-color-scheme: dark)
+  :root:not([data-user-color-scheme])
+    h1, h2, h3
+      color: #aac8e3
+
+[data-user-color-scheme='dark']
+  h1, h2, h3
+    color: #aac8e3
 
 h2
   font-size: var(--font-xl)
