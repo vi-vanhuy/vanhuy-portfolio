@@ -173,6 +173,8 @@ function renderThoughtsIndex(posts) {
         'block header',
         '',
         '  h1#content Thoughts',
+        '  .callout',
+        '    small A Room of One’s Own',
         '',
         'block content',
         '',
