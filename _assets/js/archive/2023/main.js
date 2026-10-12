@@ -94,56 +94,50 @@ modeToggleButton.addEventListener('click', evt => {
 
 applySetting();
 
-/* Resizing */
-const app = document.querySelector('.header-main');
-const glitch = document.querySelector('.glitch');
+/* Home resize: update only the moving scenery, once per rendered frame. */
+const app = document.querySelector('.header-main.home');
+if (app) {
+  const background = app.querySelector('.background svg');
+  const glitch = body.querySelector('.glitch');
+  let oldWidth = -1;
+  let nextWidth = 0;
+  let frame = 0;
+  let stopTimer = 0;
+  let glitchTimer = 0;
+  let direction = '';
 
-const observerDebouncers = new WeakMap;
+  function renderResize() {
+    frame = 0;
+    const width = nextWidth;
+    if (width === oldWidth) return;
 
-let oldWidth = -1;
+    // Same 15%-100% keyframe range and 3000px maximum as the old background.
+    const progress = Math.max(0, Math.min(1, (width / 3000 - 0.15) / 0.85));
+    background.style.transform = `translateX(${-60 * progress}%)`;
 
-const myObserver = new ResizeObserver(entries => {
-  entries.forEach(entry => {
-    clearTimeout( observerDebouncers.get( entry.target ));
-    observerDebouncers.set( entry.target, setTimeout(() => {
-      entry.target.dispatchEvent( new CustomEvent( 'resized' ));
-    }, 500));
-    const newWidth = entry.contentRect.width;
-    if (oldWidth !== -1 && oldWidth > newWidth) {
-      // Shrinking
-      app.classList.add("active");
-      root.classList.remove("growing");
-      if (!root.classList.contains("shrinking")) {
-        root.classList.add("shrinking");
-        if (document.body.contains(glitch)) {
-          glitch.classList.add("visible");
-          setTimeout(function() {
-              glitch.classList.remove("visible");
-           }, 200);
-        };
-      }
-    } else if (oldWidth !== -1 && oldWidth < newWidth) {
-      // Growing
-      app.classList.add("active");
-      root.classList.remove("shrinking");
-      if (!root.classList.contains("growing")) {
-        root.classList.add("growing");
-        if (document.body.contains(glitch)) {
-          glitch.classList.add("visible");
-          setTimeout(function() {
-              glitch.classList.remove("visible");
-           }, 200);
+    if (oldWidth !== -1) {
+      const nextDirection = width < oldWidth ? 'shrinking' : 'growing';
+      app.classList.add('active');
+      if (nextDirection !== direction) {
+        root.classList.remove('shrinking', 'growing');
+        root.classList.add(nextDirection);
+        direction = nextDirection;
+        if (glitch) {
+          clearTimeout(glitchTimer);
+          glitch.classList.add('visible');
+          glitchTimer = setTimeout(() => glitch.classList.remove('visible'), 200);
         }
       }
+      clearTimeout(stopTimer);
+      stopTimer = setTimeout(() => app.classList.remove('active'), 500);
     }
-    oldWidth = newWidth;
+    oldWidth = width;
+  }
+
+  const resizeObserver = new ResizeObserver(entries => {
+    nextWidth = entries[0].contentRect.width;
+    if (nextWidth !== oldWidth && !frame) frame = requestAnimationFrame(renderResize);
   });
-});
-
-body.addEventListener( 'resized', event => {
-  app.classList.remove("active");
-});
-
-myObserver.observe(body);
-
+  resizeObserver.observe(body);
+}
 },{}]},{},[1]);

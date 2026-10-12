@@ -103,14 +103,7 @@ $zigzag-w = 1vh
       height: 100%
       display: block
       aspect-ratio: 5000 / 570
-      --tt-key: bg1
-      --tt-ease: linear
-
-  @keyframes bg1
-    0%, 15%
-      transform: translateX(0)
-    100%
-      transform: translateX(-60%)
+      will-change: transform
 
   .background-repeat
     width: 100%
@@ -168,6 +161,7 @@ $zigzag-w = 1vh
   &.active
     .walking
       svg
+        will-change: transform
         animation: walking 1100ms steps(10, end) infinite
 
   .dark

@@ -1,7 +1,9 @@
-lynnandtonic.com
+Van Huy Portfolio
 ================
 
-The portfolio of [Lynn Fisher](https://lynnandtonic.com). Words and images © Lynn Fisher.
+The portfolio of [Van Huy](https://vanhuy.r2b.io.vn).
+
+Based on the original [theme and artwork](https://github.com/lynnandtonic). Original artwork remains the property of its author; the website footer retains the author credit.
 
 `npm i`
 
